@@ -1,0 +1,24 @@
+# Ignore Python cache files
+vul_llama/_pycache/
+
+# Ignore data too big
+data/raw_dataset.json
+data/processed_dataset.json
+data/balanced_dataset.json
+
+# Ignore data used for debugging
+data/*
+data - 複製/*
+
+# Ignore model checkpoints
+saved_model/
+
+# Ignore scripts and logs
+slurm/
+
+# Ignore evaluation results
+eval_precision_recall_codellama.pdf
+eval_precision_recall_vulllama_b4.pdf
+eval_precision_recall_vulllama_b8.pdf
+eval_precision_recall_vulllama_b16.pdf
+eval_precision_recall_vulllama.pdf

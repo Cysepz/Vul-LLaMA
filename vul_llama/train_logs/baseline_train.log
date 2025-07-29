@@ -1,0 +1,262 @@
+06/25/2025 05:07:47 - INFO - root -   ====================================================================================================
+06/25/2025 05:07:47 - INFO - root -   🔄🔄🔄🔄🔄  NEW RUN STARTED  🔄🔄🔄🔄🔄
+06/25/2025 05:07:47 - INFO - root -   ====================================================================================================
+
+06/25/2025 05:07:47 - INFO - __main__ -   CUDA STATUS = True
+06/25/2025 05:07:47 - INFO - __main__ -   device: cuda, n_gpu: 1
+06/25/2025 05:07:47 - INFO - __main__ -   Loading tokenizer...
+06/25/2025 05:07:47 - INFO - __main__ -   Loading model...
+06/25/2025 05:07:49 - INFO - accelerate.utils.modeling -   We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+06/25/2025 05:07:59 - INFO - __main__ -   Training/evaluation parameters Namespace(train_data_file='./data/train.json', eval_data_file='./data/eval.json', test_data_file='./data/test.json', saved_model_dir='./saved_model', mode='train', tokenizer='non_pretrained', model_name='codellama', reasoning_method='attention', do_local_explanation=True, do_sorting_by_line_scores=True, effort_at_n_percent_recall=0.2, recall_at_n_percent_loc=0.01, batch_size=16, gradient_accumulation_steps=1, learning_rate=0.0001, weight_decay=0.0, adam_epsilon=0.001, max_grad_norm=1.0, max_steps=-1, epochs=18, device=device(type='cuda'), test_output_path='./vul_llama/experiment/baseline/pred_result_from_main.csv', log_file='./vul_llama/train_logs/baseline_train.log', n_gpu=1)
+06/25/2025 05:07:59 - INFO - __main__ -   ***** Running training *****
+06/25/2025 05:07:59 - INFO - __main__ -     Num examples = 16000
+06/25/2025 05:07:59 - INFO - __main__ -     Num Epochs = 18
+06/25/2025 05:07:59 - INFO - __main__ -     Batch size = 16
+06/25/2025 05:07:59 - INFO - __main__ -     Gradient Accumulation steps = 1
+06/25/2025 05:07:59 - INFO - __main__ -     Total optimization steps = 18000
+06/25/2025 05:07:59 - INFO - __main__ -   === Epoch 1/18 ===
+06/25/2025 05:26:54 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 05:26:54 - INFO - __main__ -     Num examples = 2000
+06/25/2025 05:26:54 - INFO - __main__ -     Batch size = 16
+06/25/2025 05:27:39 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 05:27:39 - INFO - __main__ -     eval_accuracy = 0.871
+06/25/2025 05:27:39 - INFO - __main__ -     eval_f1 = 0.8652
+06/25/2025 05:27:39 - INFO - __main__ -     eval_precision = 0.898
+06/25/2025 05:27:39 - INFO - __main__ -     eval_recall = 0.8347
+06/25/2025 05:27:39 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 05:27:39 - INFO - __main__ -     ********************
+06/25/2025 05:27:39 - INFO - __main__ -     Best eval_f1: 0.8652
+06/25/2025 05:27:39 - INFO - __main__ -     ********************
+06/25/2025 05:27:43 - INFO - __main__ -   Saved full checkpoint to ./saved_model/checkpoint-best-f1/codellama_checkpoint.pt
+06/25/2025 05:27:43 - INFO - __main__ -   Epoch 1 finished. Avg loss=0.3955
+06/25/2025 05:27:43 - INFO - __main__ -   === Epoch 2/18 ===
+06/25/2025 05:46:38 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 05:46:38 - INFO - __main__ -     Num examples = 2000
+06/25/2025 05:46:38 - INFO - __main__ -     Batch size = 16
+06/25/2025 05:47:23 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 05:47:23 - INFO - __main__ -     eval_accuracy = 0.9075
+06/25/2025 05:47:23 - INFO - __main__ -     eval_f1 = 0.9059
+06/25/2025 05:47:23 - INFO - __main__ -     eval_precision = 0.9147
+06/25/2025 05:47:23 - INFO - __main__ -     eval_recall = 0.8972
+06/25/2025 05:47:23 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 05:47:23 - INFO - __main__ -     ********************
+06/25/2025 05:47:23 - INFO - __main__ -     Best eval_f1: 0.9059
+06/25/2025 05:47:23 - INFO - __main__ -     ********************
+06/25/2025 05:47:27 - INFO - __main__ -   Saved full checkpoint to ./saved_model/checkpoint-best-f1/codellama_checkpoint.pt
+06/25/2025 05:47:27 - INFO - __main__ -   Epoch 2 finished. Avg loss=0.2441
+06/25/2025 05:47:27 - INFO - __main__ -   === Epoch 3/18 ===
+06/25/2025 06:06:22 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 06:06:22 - INFO - __main__ -     Num examples = 2000
+06/25/2025 06:06:22 - INFO - __main__ -     Batch size = 16
+06/25/2025 06:07:07 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 06:07:07 - INFO - __main__ -     eval_accuracy = 0.919
+06/25/2025 06:07:07 - INFO - __main__ -     eval_f1 = 0.9179
+06/25/2025 06:07:07 - INFO - __main__ -     eval_precision = 0.9226
+06/25/2025 06:07:07 - INFO - __main__ -     eval_recall = 0.9133
+06/25/2025 06:07:07 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 06:07:07 - INFO - __main__ -     ********************
+06/25/2025 06:07:07 - INFO - __main__ -     Best eval_f1: 0.9179
+06/25/2025 06:07:07 - INFO - __main__ -     ********************
+06/25/2025 06:07:11 - INFO - __main__ -   Saved full checkpoint to ./saved_model/checkpoint-best-f1/codellama_checkpoint.pt
+06/25/2025 06:07:11 - INFO - __main__ -   Epoch 3 finished. Avg loss=0.1861
+06/25/2025 06:07:11 - INFO - __main__ -   === Epoch 4/18 ===
+06/25/2025 06:26:05 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 06:26:05 - INFO - __main__ -     Num examples = 2000
+06/25/2025 06:26:05 - INFO - __main__ -     Batch size = 16
+06/25/2025 06:26:50 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 06:26:50 - INFO - __main__ -     eval_accuracy = 0.9325
+06/25/2025 06:26:50 - INFO - __main__ -     eval_f1 = 0.9321
+06/25/2025 06:26:50 - INFO - __main__ -     eval_precision = 0.9298
+06/25/2025 06:26:50 - INFO - __main__ -     eval_recall = 0.9345
+06/25/2025 06:26:50 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 06:26:50 - INFO - __main__ -     ********************
+06/25/2025 06:26:50 - INFO - __main__ -     Best eval_f1: 0.9321
+06/25/2025 06:26:50 - INFO - __main__ -     ********************
+06/25/2025 06:26:55 - INFO - __main__ -   Saved full checkpoint to ./saved_model/checkpoint-best-f1/codellama_checkpoint.pt
+06/25/2025 06:26:55 - INFO - __main__ -   Epoch 4 finished. Avg loss=0.1511
+06/25/2025 06:26:55 - INFO - __main__ -   === Epoch 5/18 ===
+06/25/2025 06:45:48 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 06:45:48 - INFO - __main__ -     Num examples = 2000
+06/25/2025 06:45:48 - INFO - __main__ -     Batch size = 16
+06/25/2025 06:46:33 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 06:46:33 - INFO - __main__ -     eval_accuracy = 0.9445
+06/25/2025 06:46:33 - INFO - __main__ -     eval_f1 = 0.9442
+06/25/2025 06:46:33 - INFO - __main__ -     eval_precision = 0.9409
+06/25/2025 06:46:33 - INFO - __main__ -     eval_recall = 0.9476
+06/25/2025 06:46:33 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 06:46:33 - INFO - __main__ -     ********************
+06/25/2025 06:46:33 - INFO - __main__ -     Best eval_f1: 0.9442
+06/25/2025 06:46:33 - INFO - __main__ -     ********************
+06/25/2025 06:46:37 - INFO - __main__ -   Saved full checkpoint to ./saved_model/checkpoint-best-f1/codellama_checkpoint.pt
+06/25/2025 06:46:37 - INFO - __main__ -   Epoch 5 finished. Avg loss=0.127
+06/25/2025 06:46:37 - INFO - __main__ -   === Epoch 6/18 ===
+06/25/2025 07:05:31 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 07:05:31 - INFO - __main__ -     Num examples = 2000
+06/25/2025 07:05:31 - INFO - __main__ -     Batch size = 16
+06/25/2025 07:06:16 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 07:06:16 - INFO - __main__ -     eval_accuracy = 0.9365
+06/25/2025 07:06:16 - INFO - __main__ -     eval_f1 = 0.9353
+06/25/2025 07:06:16 - INFO - __main__ -     eval_precision = 0.9454
+06/25/2025 07:06:16 - INFO - __main__ -     eval_recall = 0.9254
+06/25/2025 07:06:16 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 07:06:16 - INFO - __main__ -   Epoch 6 finished. Avg loss=0.1105
+06/25/2025 07:06:16 - INFO - __main__ -   === Epoch 7/18 ===
+06/25/2025 07:25:11 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 07:25:11 - INFO - __main__ -     Num examples = 2000
+06/25/2025 07:25:11 - INFO - __main__ -     Batch size = 16
+06/25/2025 07:25:55 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 07:25:55 - INFO - __main__ -     eval_accuracy = 0.9495
+06/25/2025 07:25:55 - INFO - __main__ -     eval_f1 = 0.9497
+06/25/2025 07:25:55 - INFO - __main__ -     eval_precision = 0.9389
+06/25/2025 07:25:55 - INFO - __main__ -     eval_recall = 0.9607
+06/25/2025 07:25:55 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 07:25:55 - INFO - __main__ -     ********************
+06/25/2025 07:25:55 - INFO - __main__ -     Best eval_f1: 0.9497
+06/25/2025 07:25:55 - INFO - __main__ -     ********************
+06/25/2025 07:25:59 - INFO - __main__ -   Saved full checkpoint to ./saved_model/checkpoint-best-f1/codellama_checkpoint.pt
+06/25/2025 07:25:59 - INFO - __main__ -   Epoch 7 finished. Avg loss=0.0985
+06/25/2025 07:25:59 - INFO - __main__ -   === Epoch 8/18 ===
+06/25/2025 07:44:53 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 07:44:53 - INFO - __main__ -     Num examples = 2000
+06/25/2025 07:44:53 - INFO - __main__ -     Batch size = 16
+06/25/2025 07:45:38 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 07:45:38 - INFO - __main__ -     eval_accuracy = 0.9525
+06/25/2025 07:45:38 - INFO - __main__ -     eval_f1 = 0.9529
+06/25/2025 07:45:38 - INFO - __main__ -     eval_precision = 0.9384
+06/25/2025 07:45:38 - INFO - __main__ -     eval_recall = 0.9677
+06/25/2025 07:45:38 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 07:45:38 - INFO - __main__ -     ********************
+06/25/2025 07:45:38 - INFO - __main__ -     Best eval_f1: 0.9529
+06/25/2025 07:45:38 - INFO - __main__ -     ********************
+06/25/2025 07:45:43 - INFO - __main__ -   Saved full checkpoint to ./saved_model/checkpoint-best-f1/codellama_checkpoint.pt
+06/25/2025 07:45:43 - INFO - __main__ -   Epoch 8 finished. Avg loss=0.0905
+06/25/2025 07:45:43 - INFO - __main__ -   === Epoch 9/18 ===
+06/25/2025 08:04:37 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 08:04:37 - INFO - __main__ -     Num examples = 2000
+06/25/2025 08:04:37 - INFO - __main__ -     Batch size = 16
+06/25/2025 08:05:21 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 08:05:21 - INFO - __main__ -     eval_accuracy = 0.949
+06/25/2025 08:05:21 - INFO - __main__ -     eval_f1 = 0.9495
+06/25/2025 08:05:21 - INFO - __main__ -     eval_precision = 0.9329
+06/25/2025 08:05:21 - INFO - __main__ -     eval_recall = 0.9667
+06/25/2025 08:05:21 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 08:05:21 - INFO - __main__ -   Epoch 9 finished. Avg loss=0.0809
+06/25/2025 08:05:21 - INFO - __main__ -   === Epoch 10/18 ===
+06/25/2025 08:24:15 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 08:24:15 - INFO - __main__ -     Num examples = 2000
+06/25/2025 08:24:15 - INFO - __main__ -     Batch size = 16
+06/25/2025 08:25:00 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 08:25:00 - INFO - __main__ -     eval_accuracy = 0.951
+06/25/2025 08:25:00 - INFO - __main__ -     eval_f1 = 0.9515
+06/25/2025 08:25:00 - INFO - __main__ -     eval_precision = 0.9348
+06/25/2025 08:25:00 - INFO - __main__ -     eval_recall = 0.9688
+06/25/2025 08:25:00 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 08:25:00 - INFO - __main__ -   Epoch 10 finished. Avg loss=0.0718
+06/25/2025 08:25:00 - INFO - __main__ -   === Epoch 11/18 ===
+06/25/2025 08:43:55 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 08:43:55 - INFO - __main__ -     Num examples = 2000
+06/25/2025 08:43:55 - INFO - __main__ -     Batch size = 16
+06/25/2025 08:44:40 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 08:44:40 - INFO - __main__ -     eval_accuracy = 0.9525
+06/25/2025 08:44:40 - INFO - __main__ -     eval_f1 = 0.9526
+06/25/2025 08:44:40 - INFO - __main__ -     eval_precision = 0.9436
+06/25/2025 08:44:40 - INFO - __main__ -     eval_recall = 0.9617
+06/25/2025 08:44:40 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 08:44:40 - INFO - __main__ -   Epoch 11 finished. Avg loss=0.0713
+06/25/2025 08:44:40 - INFO - __main__ -   === Epoch 12/18 ===
+06/25/2025 09:03:35 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 09:03:35 - INFO - __main__ -     Num examples = 2000
+06/25/2025 09:03:35 - INFO - __main__ -     Batch size = 16
+06/25/2025 09:04:20 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 09:04:20 - INFO - __main__ -     eval_accuracy = 0.9545
+06/25/2025 09:04:20 - INFO - __main__ -     eval_f1 = 0.9552
+06/25/2025 09:04:20 - INFO - __main__ -     eval_precision = 0.9344
+06/25/2025 09:04:20 - INFO - __main__ -     eval_recall = 0.9768
+06/25/2025 09:04:20 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 09:04:20 - INFO - __main__ -     ********************
+06/25/2025 09:04:20 - INFO - __main__ -     Best eval_f1: 0.9552
+06/25/2025 09:04:20 - INFO - __main__ -     ********************
+06/25/2025 09:04:24 - INFO - __main__ -   Saved full checkpoint to ./saved_model/checkpoint-best-f1/codellama_checkpoint.pt
+06/25/2025 09:04:24 - INFO - __main__ -   Epoch 12 finished. Avg loss=0.0636
+06/25/2025 09:04:24 - INFO - __main__ -   === Epoch 13/18 ===
+06/25/2025 09:23:18 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 09:23:18 - INFO - __main__ -     Num examples = 2000
+06/25/2025 09:23:18 - INFO - __main__ -     Batch size = 16
+06/25/2025 09:24:03 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 09:24:03 - INFO - __main__ -     eval_accuracy = 0.955
+06/25/2025 09:24:03 - INFO - __main__ -     eval_f1 = 0.9552
+06/25/2025 09:24:03 - INFO - __main__ -     eval_precision = 0.9439
+06/25/2025 09:24:03 - INFO - __main__ -     eval_recall = 0.9667
+06/25/2025 09:24:03 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 09:24:03 - INFO - __main__ -     ********************
+06/25/2025 09:24:03 - INFO - __main__ -     Best eval_f1: 0.9552
+06/25/2025 09:24:03 - INFO - __main__ -     ********************
+06/25/2025 09:24:07 - INFO - __main__ -   Saved full checkpoint to ./saved_model/checkpoint-best-f1/codellama_checkpoint.pt
+06/25/2025 09:24:07 - INFO - __main__ -   Epoch 13 finished. Avg loss=0.0609
+06/25/2025 09:24:07 - INFO - __main__ -   === Epoch 14/18 ===
+06/25/2025 09:43:01 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 09:43:01 - INFO - __main__ -     Num examples = 2000
+06/25/2025 09:43:01 - INFO - __main__ -     Batch size = 16
+06/25/2025 09:43:45 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 09:43:45 - INFO - __main__ -     eval_accuracy = 0.9555
+06/25/2025 09:43:45 - INFO - __main__ -     eval_f1 = 0.9554
+06/25/2025 09:43:45 - INFO - __main__ -     eval_precision = 0.9501
+06/25/2025 09:43:45 - INFO - __main__ -     eval_recall = 0.9607
+06/25/2025 09:43:45 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 09:43:45 - INFO - __main__ -     ********************
+06/25/2025 09:43:45 - INFO - __main__ -     Best eval_f1: 0.9554
+06/25/2025 09:43:45 - INFO - __main__ -     ********************
+06/25/2025 09:43:50 - INFO - __main__ -   Saved full checkpoint to ./saved_model/checkpoint-best-f1/codellama_checkpoint.pt
+06/25/2025 09:43:50 - INFO - __main__ -   Epoch 14 finished. Avg loss=0.0596
+06/25/2025 09:43:50 - INFO - __main__ -   === Epoch 15/18 ===
+06/25/2025 10:02:45 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 10:02:45 - INFO - __main__ -     Num examples = 2000
+06/25/2025 10:02:45 - INFO - __main__ -     Batch size = 16
+06/25/2025 10:03:29 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 10:03:29 - INFO - __main__ -     eval_accuracy = 0.9565
+06/25/2025 10:03:29 - INFO - __main__ -     eval_f1 = 0.9565
+06/25/2025 10:03:29 - INFO - __main__ -     eval_precision = 0.9485
+06/25/2025 10:03:29 - INFO - __main__ -     eval_recall = 0.9647
+06/25/2025 10:03:29 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 10:03:29 - INFO - __main__ -     ********************
+06/25/2025 10:03:29 - INFO - __main__ -     Best eval_f1: 0.9565
+06/25/2025 10:03:29 - INFO - __main__ -     ********************
+06/25/2025 10:03:34 - INFO - __main__ -   Saved full checkpoint to ./saved_model/checkpoint-best-f1/codellama_checkpoint.pt
+06/25/2025 10:03:34 - INFO - __main__ -   Epoch 15 finished. Avg loss=0.0609
+06/25/2025 10:03:34 - INFO - __main__ -   === Epoch 16/18 ===
+06/25/2025 10:22:29 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 10:22:29 - INFO - __main__ -     Num examples = 2000
+06/25/2025 10:22:29 - INFO - __main__ -     Batch size = 16
+06/25/2025 10:23:13 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 10:23:13 - INFO - __main__ -     eval_accuracy = 0.9525
+06/25/2025 10:23:13 - INFO - __main__ -     eval_f1 = 0.9526
+06/25/2025 10:23:13 - INFO - __main__ -     eval_precision = 0.9427
+06/25/2025 10:23:13 - INFO - __main__ -     eval_recall = 0.9627
+06/25/2025 10:23:13 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 10:23:13 - INFO - __main__ -   Epoch 16 finished. Avg loss=0.0563
+06/25/2025 10:23:13 - INFO - __main__ -   === Epoch 17/18 ===
+06/25/2025 10:42:08 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 10:42:08 - INFO - __main__ -     Num examples = 2000
+06/25/2025 10:42:08 - INFO - __main__ -     Batch size = 16
+06/25/2025 10:42:52 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 10:42:52 - INFO - __main__ -     eval_accuracy = 0.9565
+06/25/2025 10:42:52 - INFO - __main__ -     eval_f1 = 0.9566
+06/25/2025 10:42:52 - INFO - __main__ -     eval_precision = 0.9476
+06/25/2025 10:42:52 - INFO - __main__ -     eval_recall = 0.9657
+06/25/2025 10:42:52 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 10:42:52 - INFO - __main__ -     ********************
+06/25/2025 10:42:52 - INFO - __main__ -     Best eval_f1: 0.9566
+06/25/2025 10:42:52 - INFO - __main__ -     ********************
+06/25/2025 10:42:57 - INFO - __main__ -   Saved full checkpoint to ./saved_model/checkpoint-best-f1/codellama_checkpoint.pt
+06/25/2025 10:42:57 - INFO - __main__ -   Epoch 17 finished. Avg loss=0.0559
+06/25/2025 10:42:57 - INFO - __main__ -   === Epoch 18/18 ===
+06/25/2025 11:01:50 - INFO - __main__ -   ***** Running evaluation *****
+06/25/2025 11:01:50 - INFO - __main__ -     Num examples = 2000
+06/25/2025 11:01:50 - INFO - __main__ -     Batch size = 16
+06/25/2025 11:02:35 - INFO - __main__ -   ***** Eval results *****
+06/25/2025 11:02:35 - INFO - __main__ -     eval_accuracy = 0.955
+06/25/2025 11:02:35 - INFO - __main__ -     eval_f1 = 0.9551
+06/25/2025 11:02:35 - INFO - __main__ -     eval_precision = 0.9448
+06/25/2025 11:02:35 - INFO - __main__ -     eval_recall = 0.9657
+06/25/2025 11:02:35 - INFO - __main__ -     eval_threshold = 0.5
+06/25/2025 11:02:35 - INFO - __main__ -   Epoch 18 finished. Avg loss=0.0556

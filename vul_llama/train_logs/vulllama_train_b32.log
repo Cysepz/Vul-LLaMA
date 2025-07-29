@@ -1,0 +1,218 @@
+06/10/2025 23:53:18 - INFO - root -   ====================================================================================================
+06/10/2025 23:53:18 - INFO - root -   🔄🔄🔄🔄🔄  NEW RUN STARTED  🔄🔄🔄🔄🔄
+06/10/2025 23:53:18 - INFO - root -   ====================================================================================================
+
+06/10/2025 23:53:18 - INFO - __main__ -   CUDA STATUS = True
+06/10/2025 23:53:18 - INFO - __main__ -   device: cuda, n_gpu: 1
+06/10/2025 23:53:18 - INFO - __main__ -   Loading tokenizer...
+06/10/2025 23:53:20 - INFO - __main__ -   Loading model...
+06/10/2025 23:53:49 - INFO - __main__ -   Training/evaluation parameters Namespace(train_data_file='./data/train.json', eval_data_file='./data/eval.json', test_data_file='./data/test.json', saved_model_dir='./saved_model', mode='train', tokenizer='pretrained', model_name='vulllama_b32', do_local_explanation=False, reasoning_method='attention', batch_size=16, gradient_accumulation_steps=1, learning_rate=0.0001, weight_decay=0.0, adam_epsilon=0.001, max_grad_norm=1.0, max_steps=-1, epochs=20, device=device(type='cuda'), test_output_path='./vul_llama/experiment/baseline/pred_result_from_main.csv', log_file='./vul_llama/train_logs/vulllama_train_b32.log', n_gpu=1)
+06/10/2025 23:53:54 - INFO - __main__ -   ***** Running training *****
+06/10/2025 23:53:54 - INFO - __main__ -     Num examples = 16000
+06/10/2025 23:53:54 - INFO - __main__ -     Num Epochs = 20
+06/10/2025 23:53:54 - INFO - __main__ -     Batch size = 16
+06/10/2025 23:53:54 - INFO - __main__ -     Gradient Accumulation steps = 1
+06/10/2025 23:53:54 - INFO - __main__ -     Total optimization steps = 20000
+06/10/2025 23:53:54 - INFO - __main__ -   === Epoch 1/20 ===
+06/11/2025 02:23:47 - INFO - __main__ -   ***** Running evaluation *****
+06/11/2025 02:23:47 - INFO - __main__ -     Num examples = 2000
+06/11/2025 02:23:47 - INFO - __main__ -     Batch size = 16
+06/11/2025 02:28:23 - INFO - __main__ -   ***** Eval results *****
+06/11/2025 02:28:23 - INFO - __main__ -     eval_accuracy = 0.4865
+06/11/2025 02:28:23 - INFO - __main__ -     eval_f1 = 0.0
+06/11/2025 02:28:23 - INFO - __main__ -     eval_precision = 0.0
+06/11/2025 02:28:23 - INFO - __main__ -     eval_recall = 0.0
+06/11/2025 02:28:23 - INFO - __main__ -     eval_threshold = 0.5
+06/11/2025 02:28:23 - INFO - __main__ -   Epoch 1 finished. Avg loss=0.7658
+06/11/2025 02:28:23 - INFO - __main__ -   === Epoch 2/20 ===
+06/11/2025 04:58:15 - INFO - __main__ -   ***** Running evaluation *****
+06/11/2025 04:58:15 - INFO - __main__ -     Num examples = 2000
+06/11/2025 04:58:15 - INFO - __main__ -     Batch size = 16
+06/11/2025 05:02:51 - INFO - __main__ -   ***** Eval results *****
+06/11/2025 05:02:51 - INFO - __main__ -     eval_accuracy = 0.5875
+06/11/2025 05:02:51 - INFO - __main__ -     eval_f1 = 0.3736
+06/11/2025 05:02:51 - INFO - __main__ -     eval_precision = 0.8483
+06/11/2025 05:02:51 - INFO - __main__ -     eval_recall = 0.2395
+06/11/2025 05:02:51 - INFO - __main__ -     eval_threshold = 0.5
+06/11/2025 05:02:51 - INFO - __main__ -     ********************
+06/11/2025 05:02:51 - INFO - __main__ -     Best eval_f1: 0.3736
+06/11/2025 05:02:51 - INFO - __main__ -     ********************
+06/11/2025 05:03:16 - INFO - __main__ -   Saving best model checkpoint to ./saved_model/checkpoint-best-f1/vulllama_b32.bin
+06/11/2025 05:03:16 - INFO - __main__ -   Epoch 2 finished. Avg loss=0.7044
+06/11/2025 05:03:16 - INFO - __main__ -   === Epoch 3/20 ===
+06/11/2025 07:33:07 - INFO - __main__ -   ***** Running evaluation *****
+06/11/2025 07:33:07 - INFO - __main__ -     Num examples = 2000
+06/11/2025 07:33:07 - INFO - __main__ -     Batch size = 16
+06/11/2025 07:37:43 - INFO - __main__ -   ***** Eval results *****
+06/11/2025 07:37:43 - INFO - __main__ -     eval_accuracy = 0.5875
+06/11/2025 07:37:43 - INFO - __main__ -     eval_f1 = 0.3736
+06/11/2025 07:37:43 - INFO - __main__ -     eval_precision = 0.8483
+06/11/2025 07:37:43 - INFO - __main__ -     eval_recall = 0.2395
+06/11/2025 07:37:43 - INFO - __main__ -     eval_threshold = 0.5
+06/11/2025 07:37:43 - INFO - __main__ -   Epoch 3 finished. Avg loss=0.6967
+06/11/2025 07:37:43 - INFO - __main__ -   === Epoch 4/20 ===
+06/11/2025 10:07:33 - INFO - __main__ -   ***** Running evaluation *****
+06/11/2025 10:07:33 - INFO - __main__ -     Num examples = 2000
+06/11/2025 10:07:33 - INFO - __main__ -     Batch size = 16
+06/11/2025 10:12:09 - INFO - __main__ -   ***** Eval results *****
+06/11/2025 10:12:09 - INFO - __main__ -     eval_accuracy = 0.5875
+06/11/2025 10:12:09 - INFO - __main__ -     eval_f1 = 0.3736
+06/11/2025 10:12:09 - INFO - __main__ -     eval_precision = 0.8483
+06/11/2025 10:12:09 - INFO - __main__ -     eval_recall = 0.2395
+06/11/2025 10:12:09 - INFO - __main__ -     eval_threshold = 0.5
+06/11/2025 10:12:09 - INFO - __main__ -   Epoch 4 finished. Avg loss=0.6874
+06/11/2025 10:12:09 - INFO - __main__ -   === Epoch 5/20 ===
+06/11/2025 12:42:01 - INFO - __main__ -   ***** Running evaluation *****
+06/11/2025 12:42:01 - INFO - __main__ -     Num examples = 2000
+06/11/2025 12:42:01 - INFO - __main__ -     Batch size = 16
+06/11/2025 12:46:37 - INFO - __main__ -   ***** Eval results *****
+06/11/2025 12:46:37 - INFO - __main__ -     eval_accuracy = 0.5875
+06/11/2025 12:46:37 - INFO - __main__ -     eval_f1 = 0.3736
+06/11/2025 12:46:37 - INFO - __main__ -     eval_precision = 0.8483
+06/11/2025 12:46:37 - INFO - __main__ -     eval_recall = 0.2395
+06/11/2025 12:46:37 - INFO - __main__ -     eval_threshold = 0.5
+06/11/2025 12:46:37 - INFO - __main__ -   Epoch 5 finished. Avg loss=0.6858
+06/11/2025 12:46:37 - INFO - __main__ -   === Epoch 6/20 ===
+06/11/2025 15:16:29 - INFO - __main__ -   ***** Running evaluation *****
+06/11/2025 15:16:29 - INFO - __main__ -     Num examples = 2000
+06/11/2025 15:16:29 - INFO - __main__ -     Batch size = 16
+06/11/2025 15:21:05 - INFO - __main__ -   ***** Eval results *****
+06/11/2025 15:21:05 - INFO - __main__ -     eval_accuracy = 0.5875
+06/11/2025 15:21:05 - INFO - __main__ -     eval_f1 = 0.3736
+06/11/2025 15:21:05 - INFO - __main__ -     eval_precision = 0.8483
+06/11/2025 15:21:05 - INFO - __main__ -     eval_recall = 0.2395
+06/11/2025 15:21:05 - INFO - __main__ -     eval_threshold = 0.5
+06/11/2025 15:21:05 - INFO - __main__ -   Epoch 6 finished. Avg loss=0.6792
+06/11/2025 15:21:05 - INFO - __main__ -   === Epoch 7/20 ===
+06/11/2025 17:50:57 - INFO - __main__ -   ***** Running evaluation *****
+06/11/2025 17:50:57 - INFO - __main__ -     Num examples = 2000
+06/11/2025 17:50:57 - INFO - __main__ -     Batch size = 16
+06/11/2025 17:55:33 - INFO - __main__ -   ***** Eval results *****
+06/11/2025 17:55:33 - INFO - __main__ -     eval_accuracy = 0.4865
+06/11/2025 17:55:33 - INFO - __main__ -     eval_f1 = 0.0
+06/11/2025 17:55:33 - INFO - __main__ -     eval_precision = 0.0
+06/11/2025 17:55:33 - INFO - __main__ -     eval_recall = 0.0
+06/11/2025 17:55:33 - INFO - __main__ -     eval_threshold = 0.5
+06/11/2025 17:55:33 - INFO - __main__ -   Epoch 7 finished. Avg loss=0.6918
+06/11/2025 17:55:33 - INFO - __main__ -   === Epoch 8/20 ===
+06/11/2025 20:25:26 - INFO - __main__ -   ***** Running evaluation *****
+06/11/2025 20:25:26 - INFO - __main__ -     Num examples = 2000
+06/11/2025 20:25:26 - INFO - __main__ -     Batch size = 16
+06/11/2025 20:30:02 - INFO - __main__ -   ***** Eval results *****
+06/11/2025 20:30:02 - INFO - __main__ -     eval_accuracy = 0.4865
+06/11/2025 20:30:02 - INFO - __main__ -     eval_f1 = 0.0
+06/11/2025 20:30:02 - INFO - __main__ -     eval_precision = 0.0
+06/11/2025 20:30:02 - INFO - __main__ -     eval_recall = 0.0
+06/11/2025 20:30:02 - INFO - __main__ -     eval_threshold = 0.5
+06/11/2025 20:30:02 - INFO - __main__ -   Epoch 8 finished. Avg loss=0.6818
+06/11/2025 20:30:02 - INFO - __main__ -   === Epoch 9/20 ===
+06/11/2025 22:59:55 - INFO - __main__ -   ***** Running evaluation *****
+06/11/2025 22:59:55 - INFO - __main__ -     Num examples = 2000
+06/11/2025 22:59:55 - INFO - __main__ -     Batch size = 16
+06/11/2025 23:04:31 - INFO - __main__ -   ***** Eval results *****
+06/11/2025 23:04:31 - INFO - __main__ -     eval_accuracy = 0.5875
+06/11/2025 23:04:31 - INFO - __main__ -     eval_f1 = 0.3736
+06/11/2025 23:04:31 - INFO - __main__ -     eval_precision = 0.8483
+06/11/2025 23:04:31 - INFO - __main__ -     eval_recall = 0.2395
+06/11/2025 23:04:31 - INFO - __main__ -     eval_threshold = 0.5
+06/11/2025 23:04:31 - INFO - __main__ -   Epoch 9 finished. Avg loss=0.6819
+06/11/2025 23:04:31 - INFO - __main__ -   === Epoch 10/20 ===
+06/12/2025 01:34:24 - INFO - __main__ -   ***** Running evaluation *****
+06/12/2025 01:34:24 - INFO - __main__ -     Num examples = 2000
+06/12/2025 01:34:24 - INFO - __main__ -     Batch size = 16
+06/12/2025 01:38:59 - INFO - __main__ -   ***** Eval results *****
+06/12/2025 01:38:59 - INFO - __main__ -     eval_accuracy = 0.5875
+06/12/2025 01:38:59 - INFO - __main__ -     eval_f1 = 0.3736
+06/12/2025 01:38:59 - INFO - __main__ -     eval_precision = 0.8483
+06/12/2025 01:38:59 - INFO - __main__ -     eval_recall = 0.2395
+06/12/2025 01:38:59 - INFO - __main__ -     eval_threshold = 0.5
+06/12/2025 01:38:59 - INFO - __main__ -   Epoch 10 finished. Avg loss=0.6793
+06/12/2025 01:38:59 - INFO - __main__ -   === Epoch 11/20 ===
+06/12/2025 04:08:52 - INFO - __main__ -   ***** Running evaluation *****
+06/12/2025 04:08:52 - INFO - __main__ -     Num examples = 2000
+06/12/2025 04:08:52 - INFO - __main__ -     Batch size = 16
+06/12/2025 04:13:27 - INFO - __main__ -   ***** Eval results *****
+06/12/2025 04:13:27 - INFO - __main__ -     eval_accuracy = 0.5875
+06/12/2025 04:13:27 - INFO - __main__ -     eval_f1 = 0.3736
+06/12/2025 04:13:27 - INFO - __main__ -     eval_precision = 0.8483
+06/12/2025 04:13:27 - INFO - __main__ -     eval_recall = 0.2395
+06/12/2025 04:13:27 - INFO - __main__ -     eval_threshold = 0.5
+06/12/2025 04:13:27 - INFO - __main__ -   Epoch 11 finished. Avg loss=0.6788
+06/12/2025 04:13:27 - INFO - __main__ -   === Epoch 12/20 ===
+06/12/2025 06:43:21 - INFO - __main__ -   ***** Running evaluation *****
+06/12/2025 06:43:21 - INFO - __main__ -     Num examples = 2000
+06/12/2025 06:43:21 - INFO - __main__ -     Batch size = 16
+06/12/2025 06:47:57 - INFO - __main__ -   ***** Eval results *****
+06/12/2025 06:47:57 - INFO - __main__ -     eval_accuracy = 0.5875
+06/12/2025 06:47:57 - INFO - __main__ -     eval_f1 = 0.3736
+06/12/2025 06:47:57 - INFO - __main__ -     eval_precision = 0.8483
+06/12/2025 06:47:57 - INFO - __main__ -     eval_recall = 0.2395
+06/12/2025 06:47:57 - INFO - __main__ -     eval_threshold = 0.5
+06/12/2025 06:47:57 - INFO - __main__ -   Epoch 12 finished. Avg loss=0.6761
+06/12/2025 06:47:57 - INFO - __main__ -   === Epoch 13/20 ===
+06/12/2025 09:17:50 - INFO - __main__ -   ***** Running evaluation *****
+06/12/2025 09:17:50 - INFO - __main__ -     Num examples = 2000
+06/12/2025 09:17:50 - INFO - __main__ -     Batch size = 16
+06/12/2025 09:22:26 - INFO - __main__ -   ***** Eval results *****
+06/12/2025 09:22:26 - INFO - __main__ -     eval_accuracy = 0.5875
+06/12/2025 09:22:26 - INFO - __main__ -     eval_f1 = 0.3736
+06/12/2025 09:22:26 - INFO - __main__ -     eval_precision = 0.8483
+06/12/2025 09:22:26 - INFO - __main__ -     eval_recall = 0.2395
+06/12/2025 09:22:26 - INFO - __main__ -     eval_threshold = 0.5
+06/12/2025 09:22:26 - INFO - __main__ -   Epoch 13 finished. Avg loss=0.6762
+06/12/2025 09:22:26 - INFO - __main__ -   === Epoch 14/20 ===
+06/12/2025 11:52:20 - INFO - __main__ -   ***** Running evaluation *****
+06/12/2025 11:52:20 - INFO - __main__ -     Num examples = 2000
+06/12/2025 11:52:20 - INFO - __main__ -     Batch size = 16
+06/12/2025 11:56:56 - INFO - __main__ -   ***** Eval results *****
+06/12/2025 11:56:56 - INFO - __main__ -     eval_accuracy = 0.5875
+06/12/2025 11:56:56 - INFO - __main__ -     eval_f1 = 0.3736
+06/12/2025 11:56:56 - INFO - __main__ -     eval_precision = 0.8483
+06/12/2025 11:56:56 - INFO - __main__ -     eval_recall = 0.2395
+06/12/2025 11:56:56 - INFO - __main__ -     eval_threshold = 0.5
+06/12/2025 11:56:56 - INFO - __main__ -   Epoch 14 finished. Avg loss=0.6735
+06/12/2025 11:56:56 - INFO - __main__ -   === Epoch 15/20 ===
+06/12/2025 14:26:48 - INFO - __main__ -   ***** Running evaluation *****
+06/12/2025 14:26:48 - INFO - __main__ -     Num examples = 2000
+06/12/2025 14:26:48 - INFO - __main__ -     Batch size = 16
+06/12/2025 14:31:24 - INFO - __main__ -   ***** Eval results *****
+06/12/2025 14:31:24 - INFO - __main__ -     eval_accuracy = 0.5875
+06/12/2025 14:31:24 - INFO - __main__ -     eval_f1 = 0.3736
+06/12/2025 14:31:24 - INFO - __main__ -     eval_precision = 0.8483
+06/12/2025 14:31:24 - INFO - __main__ -     eval_recall = 0.2395
+06/12/2025 14:31:24 - INFO - __main__ -     eval_threshold = 0.5
+06/12/2025 14:31:24 - INFO - __main__ -   Epoch 15 finished. Avg loss=0.6784
+06/12/2025 14:31:24 - INFO - __main__ -   === Epoch 16/20 ===
+06/12/2025 17:01:16 - INFO - __main__ -   ***** Running evaluation *****
+06/12/2025 17:01:16 - INFO - __main__ -     Num examples = 2000
+06/12/2025 17:01:16 - INFO - __main__ -     Batch size = 16
+06/12/2025 17:05:52 - INFO - __main__ -   ***** Eval results *****
+06/12/2025 17:05:52 - INFO - __main__ -     eval_accuracy = 0.5875
+06/12/2025 17:05:52 - INFO - __main__ -     eval_f1 = 0.3736
+06/12/2025 17:05:52 - INFO - __main__ -     eval_precision = 0.8483
+06/12/2025 17:05:52 - INFO - __main__ -     eval_recall = 0.2395
+06/12/2025 17:05:52 - INFO - __main__ -     eval_threshold = 0.5
+06/12/2025 17:05:52 - INFO - __main__ -   Epoch 16 finished. Avg loss=0.6779
+06/12/2025 17:05:52 - INFO - __main__ -   === Epoch 17/20 ===
+06/12/2025 19:35:44 - INFO - __main__ -   ***** Running evaluation *****
+06/12/2025 19:35:44 - INFO - __main__ -     Num examples = 2000
+06/12/2025 19:35:44 - INFO - __main__ -     Batch size = 16
+06/12/2025 19:40:20 - INFO - __main__ -   ***** Eval results *****
+06/12/2025 19:40:20 - INFO - __main__ -     eval_accuracy = 0.5875
+06/12/2025 19:40:20 - INFO - __main__ -     eval_f1 = 0.3736
+06/12/2025 19:40:20 - INFO - __main__ -     eval_precision = 0.8483
+06/12/2025 19:40:20 - INFO - __main__ -     eval_recall = 0.2395
+06/12/2025 19:40:20 - INFO - __main__ -     eval_threshold = 0.5
+06/12/2025 19:40:20 - INFO - __main__ -   Epoch 17 finished. Avg loss=0.6746
+06/12/2025 19:40:20 - INFO - __main__ -   === Epoch 18/20 ===
+06/12/2025 22:10:12 - INFO - __main__ -   ***** Running evaluation *****
+06/12/2025 22:10:12 - INFO - __main__ -     Num examples = 2000
+06/12/2025 22:10:12 - INFO - __main__ -     Batch size = 16
+06/12/2025 22:14:47 - INFO - __main__ -   ***** Eval results *****
+06/12/2025 22:14:47 - INFO - __main__ -     eval_accuracy = 0.5875
+06/12/2025 22:14:47 - INFO - __main__ -     eval_f1 = 0.3736
+06/12/2025 22:14:47 - INFO - __main__ -     eval_precision = 0.8483
+06/12/2025 22:14:47 - INFO - __main__ -     eval_recall = 0.2395
+06/12/2025 22:14:47 - INFO - __main__ -     eval_threshold = 0.5
+06/12/2025 22:14:47 - INFO - __main__ -   Epoch 18 finished. Avg loss=0.6735
+06/12/2025 22:14:47 - INFO - __main__ -   === Epoch 19/20 ===

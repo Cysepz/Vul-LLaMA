@@ -1,0 +1,220 @@
+06/08/2025 03:11:20 - INFO - root -   ====================================================================================================
+06/08/2025 03:11:20 - INFO - root -   🔄🔄🔄🔄🔄  NEW RUN STARTED  🔄🔄🔄🔄🔄
+06/08/2025 03:11:20 - INFO - root -   ====================================================================================================
+
+06/08/2025 03:11:20 - INFO - __main__ -   CUDA STATUS = True
+06/08/2025 03:11:20 - INFO - __main__ -   device: cuda, n_gpu: 1
+06/08/2025 03:11:20 - INFO - __main__ -   Loading tokenizer...
+06/08/2025 03:11:22 - INFO - __main__ -   Loading model...
+06/08/2025 03:11:51 - INFO - __main__ -   Training/evaluation parameters Namespace(train_data_file='./data/train.json', eval_data_file='./data/eval.json', test_data_file='./data/test.json', saved_model_dir='./saved_model', mode='train', tokenizer='pretrained', model_name='vulllama', do_local_explanation=False, reasoning_method='attention', bidirectional_layer=8, batch_size=16, gradient_accumulation_steps=1, learning_rate=0.0001, weight_decay=0.0, adam_epsilon=0.001, max_grad_norm=1.0, max_steps=-1, epochs=15, device=device(type='cuda'), test_output_path='./vul_llama/experiment/baseline/pred_result_from_main.csv', log_file='./vul_llama/train_logs/vulllama_train.log', n_gpu=1)
+06/08/2025 03:11:57 - INFO - __main__ -   ***** Running training *****
+06/08/2025 03:11:57 - INFO - __main__ -     Num examples = 16000
+06/08/2025 03:11:57 - INFO - __main__ -     Num Epochs = 15
+06/08/2025 03:11:57 - INFO - __main__ -     Batch size = 16
+06/08/2025 03:11:57 - INFO - __main__ -     Gradient Accumulation steps = 1
+06/08/2025 03:11:57 - INFO - __main__ -     Total optimization steps = 15000
+06/08/2025 03:11:57 - INFO - __main__ -   === Epoch 1/15 ===
+06/08/2025 05:43:09 - INFO - __main__ -   ***** Running evaluation *****
+06/08/2025 05:43:09 - INFO - __main__ -     Num examples = 2000
+06/08/2025 05:43:09 - INFO - __main__ -     Batch size = 16
+06/08/2025 05:47:48 - INFO - __main__ -   ***** Eval results *****
+06/08/2025 05:47:48 - INFO - __main__ -     eval_accuracy = 0.8445
+06/08/2025 05:47:48 - INFO - __main__ -     eval_f1 = 0.8313
+06/08/2025 05:47:48 - INFO - __main__ -     eval_precision = 0.9387
+06/08/2025 05:47:48 - INFO - __main__ -     eval_recall = 0.7459
+06/08/2025 05:47:48 - INFO - __main__ -     eval_threshold = 0.5
+06/08/2025 05:47:48 - INFO - __main__ -     ********************
+06/08/2025 05:47:48 - INFO - __main__ -     Best eval_f1: 0.8313
+06/08/2025 05:47:48 - INFO - __main__ -     ********************
+06/08/2025 05:48:14 - INFO - __main__ -   Saving best model checkpoint to ./saved_model/checkpoint-best-f1/vulllama.bin
+06/08/2025 05:48:14 - INFO - __main__ -   Epoch 1 finished. Avg loss=0.6068
+06/08/2025 05:48:14 - INFO - __main__ -   === Epoch 2/15 ===
+06/08/2025 08:19:25 - INFO - __main__ -   ***** Running evaluation *****
+06/08/2025 08:19:25 - INFO - __main__ -     Num examples = 2000
+06/08/2025 08:19:25 - INFO - __main__ -     Batch size = 16
+06/08/2025 08:24:03 - INFO - __main__ -   ***** Eval results *****
+06/08/2025 08:24:03 - INFO - __main__ -     eval_accuracy = 0.896
+06/08/2025 08:24:03 - INFO - __main__ -     eval_f1 = 0.8942
+06/08/2025 08:24:03 - INFO - __main__ -     eval_precision = 0.9361
+06/08/2025 08:24:03 - INFO - __main__ -     eval_recall = 0.8559
+06/08/2025 08:24:03 - INFO - __main__ -     eval_threshold = 0.5
+06/08/2025 08:24:03 - INFO - __main__ -     ********************
+06/08/2025 08:24:03 - INFO - __main__ -     Best eval_f1: 0.8942
+06/08/2025 08:24:03 - INFO - __main__ -     ********************
+06/08/2025 08:24:28 - INFO - __main__ -   Saving best model checkpoint to ./saved_model/checkpoint-best-f1/vulllama.bin
+06/08/2025 08:24:28 - INFO - __main__ -   Epoch 2 finished. Avg loss=0.3957
+06/08/2025 08:24:28 - INFO - __main__ -   === Epoch 3/15 ===
+06/08/2025 10:55:39 - INFO - __main__ -   ***** Running evaluation *****
+06/08/2025 10:55:39 - INFO - __main__ -     Num examples = 2000
+06/08/2025 10:55:39 - INFO - __main__ -     Batch size = 16
+06/08/2025 11:00:18 - INFO - __main__ -   ***** Eval results *****
+06/08/2025 11:00:18 - INFO - __main__ -     eval_accuracy = 0.9095
+06/08/2025 11:00:18 - INFO - __main__ -     eval_f1 = 0.9078
+06/08/2025 11:00:18 - INFO - __main__ -     eval_precision = 0.9519
+06/08/2025 11:00:18 - INFO - __main__ -     eval_recall = 0.8676
+06/08/2025 11:00:18 - INFO - __main__ -     eval_threshold = 0.5
+06/08/2025 11:00:18 - INFO - __main__ -     ********************
+06/08/2025 11:00:18 - INFO - __main__ -     Best eval_f1: 0.9078
+06/08/2025 11:00:18 - INFO - __main__ -     ********************
+06/08/2025 11:00:44 - INFO - __main__ -   Saving best model checkpoint to ./saved_model/checkpoint-best-f1/vulllama.bin
+06/08/2025 11:00:44 - INFO - __main__ -   Epoch 3 finished. Avg loss=0.3209
+06/08/2025 11:00:44 - INFO - __main__ -   === Epoch 4/15 ===
+06/08/2025 13:31:55 - INFO - __main__ -   ***** Running evaluation *****
+06/08/2025 13:31:55 - INFO - __main__ -     Num examples = 2000
+06/08/2025 13:31:55 - INFO - __main__ -     Batch size = 16
+06/08/2025 13:36:33 - INFO - __main__ -   ***** Eval results *****
+06/08/2025 13:36:33 - INFO - __main__ -     eval_accuracy = 0.909
+06/08/2025 13:36:33 - INFO - __main__ -     eval_f1 = 0.9159
+06/08/2025 13:36:33 - INFO - __main__ -     eval_precision = 0.8716
+06/08/2025 13:36:33 - INFO - __main__ -     eval_recall = 0.9649
+06/08/2025 13:36:33 - INFO - __main__ -     eval_threshold = 0.5
+06/08/2025 13:36:33 - INFO - __main__ -     ********************
+06/08/2025 13:36:33 - INFO - __main__ -     Best eval_f1: 0.9159
+06/08/2025 13:36:33 - INFO - __main__ -     ********************
+06/08/2025 13:37:00 - INFO - __main__ -   Saving best model checkpoint to ./saved_model/checkpoint-best-f1/vulllama.bin
+06/08/2025 13:37:00 - INFO - __main__ -   Epoch 4 finished. Avg loss=0.2717
+06/08/2025 13:37:00 - INFO - __main__ -   === Epoch 5/15 ===
+06/08/2025 16:08:11 - INFO - __main__ -   ***** Running evaluation *****
+06/08/2025 16:08:11 - INFO - __main__ -     Num examples = 2000
+06/08/2025 16:08:11 - INFO - __main__ -     Batch size = 16
+06/08/2025 16:12:49 - INFO - __main__ -   ***** Eval results *****
+06/08/2025 16:12:49 - INFO - __main__ -     eval_accuracy = 0.9275
+06/08/2025 16:12:49 - INFO - __main__ -     eval_f1 = 0.9286
+06/08/2025 16:12:49 - INFO - __main__ -     eval_precision = 0.9392
+06/08/2025 16:12:49 - INFO - __main__ -     eval_recall = 0.9182
+06/08/2025 16:12:49 - INFO - __main__ -     eval_threshold = 0.5
+06/08/2025 16:12:49 - INFO - __main__ -     ********************
+06/08/2025 16:12:49 - INFO - __main__ -     Best eval_f1: 0.9286
+06/08/2025 16:12:49 - INFO - __main__ -     ********************
+06/08/2025 16:13:18 - INFO - __main__ -   Saving best model checkpoint to ./saved_model/checkpoint-best-f1/vulllama.bin
+06/08/2025 16:13:18 - INFO - __main__ -   Epoch 5 finished. Avg loss=0.2455
+06/08/2025 16:13:18 - INFO - __main__ -   === Epoch 6/15 ===
+06/08/2025 18:44:29 - INFO - __main__ -   ***** Running evaluation *****
+06/08/2025 18:44:29 - INFO - __main__ -     Num examples = 2000
+06/08/2025 18:44:29 - INFO - __main__ -     Batch size = 16
+06/08/2025 18:49:08 - INFO - __main__ -   ***** Eval results *****
+06/08/2025 18:49:08 - INFO - __main__ -     eval_accuracy = 0.9285
+06/08/2025 18:49:08 - INFO - __main__ -     eval_f1 = 0.928
+06/08/2025 18:49:08 - INFO - __main__ -     eval_precision = 0.9614
+06/08/2025 18:49:08 - INFO - __main__ -     eval_recall = 0.8968
+06/08/2025 18:49:08 - INFO - __main__ -     eval_threshold = 0.5
+06/08/2025 18:49:08 - INFO - __main__ -   Epoch 6 finished. Avg loss=0.2174
+06/08/2025 18:49:08 - INFO - __main__ -   === Epoch 7/15 ===
+06/08/2025 21:20:19 - INFO - __main__ -   ***** Running evaluation *****
+06/08/2025 21:20:19 - INFO - __main__ -     Num examples = 2000
+06/08/2025 21:20:19 - INFO - __main__ -     Batch size = 16
+06/08/2025 21:24:57 - INFO - __main__ -   ***** Eval results *****
+06/08/2025 21:24:57 - INFO - __main__ -     eval_accuracy = 0.949
+06/08/2025 21:24:57 - INFO - __main__ -     eval_f1 = 0.9504
+06/08/2025 21:24:57 - INFO - __main__ -     eval_precision = 0.9495
+06/08/2025 21:24:57 - INFO - __main__ -     eval_recall = 0.9513
+06/08/2025 21:24:57 - INFO - __main__ -     eval_threshold = 0.5
+06/08/2025 21:24:57 - INFO - __main__ -     ********************
+06/08/2025 21:24:57 - INFO - __main__ -     Best eval_f1: 0.9504
+06/08/2025 21:24:57 - INFO - __main__ -     ********************
+06/08/2025 21:25:24 - INFO - __main__ -   Saving best model checkpoint to ./saved_model/checkpoint-best-f1/vulllama.bin
+06/08/2025 21:25:24 - INFO - __main__ -   Epoch 7 finished. Avg loss=0.1977
+06/08/2025 21:25:24 - INFO - __main__ -   === Epoch 8/15 ===
+06/08/2025 23:56:36 - INFO - __main__ -   ***** Running evaluation *****
+06/08/2025 23:56:36 - INFO - __main__ -     Num examples = 2000
+06/08/2025 23:56:36 - INFO - __main__ -     Batch size = 16
+06/09/2025 00:01:14 - INFO - __main__ -   ***** Eval results *****
+06/09/2025 00:01:14 - INFO - __main__ -     eval_accuracy = 0.9525
+06/09/2025 00:01:14 - INFO - __main__ -     eval_f1 = 0.9538
+06/09/2025 00:01:14 - INFO - __main__ -     eval_precision = 0.9533
+06/09/2025 00:01:14 - INFO - __main__ -     eval_recall = 0.9542
+06/09/2025 00:01:14 - INFO - __main__ -     eval_threshold = 0.5
+06/09/2025 00:01:14 - INFO - __main__ -     ********************
+06/09/2025 00:01:14 - INFO - __main__ -     Best eval_f1: 0.9538
+06/09/2025 00:01:14 - INFO - __main__ -     ********************
+06/09/2025 00:01:42 - INFO - __main__ -   Saving best model checkpoint to ./saved_model/checkpoint-best-f1/vulllama.bin
+06/09/2025 00:01:42 - INFO - __main__ -   Epoch 8 finished. Avg loss=0.1753
+06/09/2025 00:01:42 - INFO - __main__ -   === Epoch 9/15 ===
+06/09/2025 02:32:53 - INFO - __main__ -   ***** Running evaluation *****
+06/09/2025 02:32:53 - INFO - __main__ -     Num examples = 2000
+06/09/2025 02:32:53 - INFO - __main__ -     Batch size = 16
+06/09/2025 02:37:31 - INFO - __main__ -   ***** Eval results *****
+06/09/2025 02:37:31 - INFO - __main__ -     eval_accuracy = 0.947
+06/09/2025 02:37:31 - INFO - __main__ -     eval_f1 = 0.9484
+06/09/2025 02:37:31 - INFO - __main__ -     eval_precision = 0.9475
+06/09/2025 02:37:31 - INFO - __main__ -     eval_recall = 0.9494
+06/09/2025 02:37:31 - INFO - __main__ -     eval_threshold = 0.5
+06/09/2025 02:37:31 - INFO - __main__ -   Epoch 9 finished. Avg loss=0.1622
+06/09/2025 02:37:31 - INFO - __main__ -   === Epoch 10/15 ===
+06/09/2025 05:08:42 - INFO - __main__ -   ***** Running evaluation *****
+06/09/2025 05:08:42 - INFO - __main__ -     Num examples = 2000
+06/09/2025 05:08:42 - INFO - __main__ -     Batch size = 16
+06/09/2025 05:13:21 - INFO - __main__ -   ***** Eval results *****
+06/09/2025 05:13:21 - INFO - __main__ -     eval_accuracy = 0.9535
+06/09/2025 05:13:21 - INFO - __main__ -     eval_f1 = 0.9557
+06/09/2025 05:13:21 - INFO - __main__ -     eval_precision = 0.9356
+06/09/2025 05:13:21 - INFO - __main__ -     eval_recall = 0.9766
+06/09/2025 05:13:21 - INFO - __main__ -     eval_threshold = 0.5
+06/09/2025 05:13:21 - INFO - __main__ -     ********************
+06/09/2025 05:13:21 - INFO - __main__ -     Best eval_f1: 0.9557
+06/09/2025 05:13:21 - INFO - __main__ -     ********************
+06/09/2025 05:13:49 - INFO - __main__ -   Saving best model checkpoint to ./saved_model/checkpoint-best-f1/vulllama.bin
+06/09/2025 05:13:49 - INFO - __main__ -   Epoch 10 finished. Avg loss=0.1477
+06/09/2025 05:13:49 - INFO - __main__ -   === Epoch 11/15 ===
+06/09/2025 07:45:00 - INFO - __main__ -   ***** Running evaluation *****
+06/09/2025 07:45:00 - INFO - __main__ -     Num examples = 2000
+06/09/2025 07:45:00 - INFO - __main__ -     Batch size = 16
+06/09/2025 07:49:39 - INFO - __main__ -   ***** Eval results *****
+06/09/2025 07:49:39 - INFO - __main__ -     eval_accuracy = 0.9515
+06/09/2025 07:49:39 - INFO - __main__ -     eval_f1 = 0.9525
+06/09/2025 07:49:39 - INFO - __main__ -     eval_precision = 0.9586
+06/09/2025 07:49:39 - INFO - __main__ -     eval_recall = 0.9464
+06/09/2025 07:49:39 - INFO - __main__ -     eval_threshold = 0.5
+06/09/2025 07:49:39 - INFO - __main__ -   Epoch 11 finished. Avg loss=0.1375
+06/09/2025 07:49:39 - INFO - __main__ -   === Epoch 12/15 ===
+06/09/2025 10:20:49 - INFO - __main__ -   ***** Running evaluation *****
+06/09/2025 10:20:49 - INFO - __main__ -     Num examples = 2000
+06/09/2025 10:20:49 - INFO - __main__ -     Batch size = 16
+06/09/2025 10:25:28 - INFO - __main__ -   ***** Eval results *****
+06/09/2025 10:25:28 - INFO - __main__ -     eval_accuracy = 0.952
+06/09/2025 10:25:28 - INFO - __main__ -     eval_f1 = 0.9536
+06/09/2025 10:25:28 - INFO - __main__ -     eval_precision = 0.9472
+06/09/2025 10:25:28 - INFO - __main__ -     eval_recall = 0.9601
+06/09/2025 10:25:28 - INFO - __main__ -     eval_threshold = 0.5
+06/09/2025 10:25:28 - INFO - __main__ -   Epoch 12 finished. Avg loss=0.1285
+06/09/2025 10:25:28 - INFO - __main__ -   === Epoch 13/15 ===
+06/09/2025 12:56:37 - INFO - __main__ -   ***** Running evaluation *****
+06/09/2025 12:56:37 - INFO - __main__ -     Num examples = 2000
+06/09/2025 12:56:37 - INFO - __main__ -     Batch size = 16
+06/09/2025 13:01:15 - INFO - __main__ -   ***** Eval results *****
+06/09/2025 13:01:15 - INFO - __main__ -     eval_accuracy = 0.926
+06/09/2025 13:01:15 - INFO - __main__ -     eval_f1 = 0.9317
+06/09/2025 13:01:15 - INFO - __main__ -     eval_precision = 0.8852
+06/09/2025 13:01:15 - INFO - __main__ -     eval_recall = 0.9834
+06/09/2025 13:01:15 - INFO - __main__ -     eval_threshold = 0.5
+06/09/2025 13:01:15 - INFO - __main__ -   Epoch 13 finished. Avg loss=0.1251
+06/09/2025 13:01:15 - INFO - __main__ -   === Epoch 14/15 ===
+06/09/2025 15:32:24 - INFO - __main__ -   ***** Running evaluation *****
+06/09/2025 15:32:24 - INFO - __main__ -     Num examples = 2000
+06/09/2025 15:32:24 - INFO - __main__ -     Batch size = 16
+06/09/2025 15:37:02 - INFO - __main__ -   ***** Eval results *****
+06/09/2025 15:37:02 - INFO - __main__ -     eval_accuracy = 0.959
+06/09/2025 15:37:02 - INFO - __main__ -     eval_f1 = 0.9603
+06/09/2025 15:37:02 - INFO - __main__ -     eval_precision = 0.9548
+06/09/2025 15:37:02 - INFO - __main__ -     eval_recall = 0.9659
+06/09/2025 15:37:02 - INFO - __main__ -     eval_threshold = 0.5
+06/09/2025 15:37:02 - INFO - __main__ -     ********************
+06/09/2025 15:37:02 - INFO - __main__ -     Best eval_f1: 0.9603
+06/09/2025 15:37:02 - INFO - __main__ -     ********************
+06/09/2025 15:37:33 - INFO - __main__ -   Saving best model checkpoint to ./saved_model/checkpoint-best-f1/vulllama.bin
+06/09/2025 15:37:33 - INFO - __main__ -   Epoch 14 finished. Avg loss=0.1209
+06/09/2025 15:37:33 - INFO - __main__ -   === Epoch 15/15 ===
+06/09/2025 18:08:41 - INFO - __main__ -   ***** Running evaluation *****
+06/09/2025 18:08:41 - INFO - __main__ -     Num examples = 2000
+06/09/2025 18:08:41 - INFO - __main__ -     Batch size = 16
+06/09/2025 18:13:19 - INFO - __main__ -   ***** Eval results *****
+06/09/2025 18:13:19 - INFO - __main__ -     eval_accuracy = 0.9375
+06/09/2025 18:13:19 - INFO - __main__ -     eval_f1 = 0.9376
+06/09/2025 18:13:19 - INFO - __main__ -     eval_precision = 0.9621
+06/09/2025 18:13:19 - INFO - __main__ -     eval_recall = 0.9143
+06/09/2025 18:13:19 - INFO - __main__ -     eval_threshold = 0.5
+06/09/2025 18:13:19 - INFO - __main__ -   Epoch 15 finished. Avg loss=0.1073
+06/09/2025 18:13:19 - INFO - root -   
+
+
+
