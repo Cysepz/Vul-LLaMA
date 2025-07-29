@@ -8,7 +8,7 @@ data/balanced_dataset.json
 
 # Ignore data used for debugging
 data/*
-data - 複製/*
+
 
 # Ignore model checkpoints
 saved_model/

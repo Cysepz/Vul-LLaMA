@@ -798,58 +798,7 @@ def get_word_att_scores(all_tokens: list, att_scores: list) -> list:
 def clean_token(t):
     return t.replace("▁", "").replace("<0x0A>", "").strip()
 
-# 計算行級別分數方式：單純將該行所有 token 的注意力分數加總
-# def get_all_lines_score(word_att_scores: list, verified_flaw_lines: list):
-#     # === 處理成乾淨字串再比對 ===
-#     verified_flaw_lines = [''.join([clean_token(tok) for tok in l]) for l in verified_flaw_lines]
-        
-#     separator = ["<0x0A>"]
 
-#     all_lines_score = []
-#     score_sum = 0
-#     line_idx = 0
-#     flaw_line_indices = []
-#     line = ""
-
-#     for i in range(len(word_att_scores)):
-#         token, score = word_att_scores[i]
-
-#         if (token in separator or i == len(word_att_scores) - 1) and score_sum != 0:
-#             if token in separator:
-#                 score_sum += score
-
-#             all_lines_score.append(score_sum)
-
-#             # # === 清洗目前累積的 line 再比對 ===
-#             # clean_line = clean_token(line)
-#             # if clean_line in verified_flaw_lines:
-#             #     flaw_line_indices.append(line_idx)
-            
-#             # 比對這一行是否是缺陷行
-#             clean_line = line.replace("▁", "").replace("<0x0A>", "").strip()
-#             matched = False
-#             for v in verified_flaw_lines:
-#                 if clean_line.strip() == v.strip():
-#                     flaw_line_indices.append(line_idx)
-#                     matched = True
-#                     break
-
-#             # if not matched:
-#             #     print(f"[DEBUG] Line {line_idx} not matched:")
-#             #     print(f"  Clean line (repr)   : {repr(clean_line)}")
-#             #     print(f"  Verified lines (repr): {[repr(v) for v in verified_flaw_lines]}")
-
-
-#             # 重置
-#             line = ""
-#             score_sum = 0
-#             line_idx += 1
-
-#         elif token not in separator:
-#             line += token
-#             score_sum += score
-
-#     return all_lines_score, flaw_line_indices
 
 def get_all_lines_score(word_att_scores: list, verified_flaw_lines: list, args):
     # === 清洗 verified flaw line 字串 ===

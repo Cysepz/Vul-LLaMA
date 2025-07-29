@@ -1,25 +1,24 @@
-# VulLLaMA: Line-Level Vulnerability Detection Using Fine-Tuned Code LLaMA
+# Vul LLaMA: Enhancing Line-Level Vulnerability Localization Performance in Android Code by Fine-Tuning the Self-Attention Mechanism of Code LLaMA
 
 <p align="center">
-  <img src="logo/vulllama_logo.png" width="200" height="200">
+  <img src="C:\Users\cymlab\OneDrive - 國立高雄應用科技大學\112屆\朱珮瑜\7月口試\VulLLaMA.png" width="200" height="200">
 </p>
 
 <p align="center">
   <strong>VulLLaMA</strong><br>
-  A Transformer-based Line-Level Vulnerability Detection Approach Based on LLaMA
 </p>
-
-[![DOI](https://zenodo.org/badge/DOI_PLACEHOLDER.svg)](https://zenodo.org/DOI_PLACEHOLDER)
 
 ---
 
 ## Overview
 
-**VulLLaMA** is a replication-ready research prototype that fine-tunes the self-attention mechanism in Code LLaMA for line-level vulnerability prediction in Android source code. This repository contains:
+**VulLLaMA** is a replication-ready research prototype that fine-tunes the self-attention mechanism in Code LLaMA for line-level vulnerability prediction in Android source code. 
+
+
+This repository contains:
 
 * Data preprocessing scripts
-* Model training and evaluation routines
-* Fine-tuned model checkpoints
+* Model training, evaluation, testing routines
 * Evaluation metrics & result files
 
 > This repository is meant to accompany an academic paper submission. Please refer to the paper for more context.
@@ -29,10 +28,9 @@
 ## Repository Structure
 
 ```
-├── vul_llama/               # Main source code (model architecture, trainer, etc.)
-├── data/                    # Dataset folder (not tracked by Git; ignored in .gitignore)
+├── data/                   # Dataset folder (not tracked by Git; ignored in .gitignore)
+├── vul_llama/              # Main source code (model architecture, trainer, etc.)
 ├── saved_model/            # Fine-tuned model checkpoints (ignored)
-├── slurm/                  # Slurm job submission scripts (ignored)
 ├── environment.yml         # Conda environment setup
 ├── .gitignore              # Files/folders excluded from Git tracking
 ├── README.md               # This file
@@ -55,12 +53,17 @@ We recommend using conda:
 
 ```bash
 conda env create -f environment.yml
-conda activate vulllama
+conda activate venv
 ```
 
-### Step 3: (Optional) Download Dataset
+### Step 3: Download and Unzip Dataset
 
-Please download the preprocessed dataset separately from our [Google Drive link](https://drive.google.com/) or the [Zenodo record](https://zenodo.org/record/DOI_PLACEHOLDER).
+```bash
+FIXME
+```
+All of the dataset has the same number of columns (i.e., 39 cols), we focus on the following 3 columns to conduct our experiments:
+1. 
+
 
 Place the following files under `data/`:
 
