@@ -19,7 +19,16 @@ This repository contains:
 ```
 ├── data/                   # Dataset folder (not tracked by Git; ignored in .gitignore)
 ├── vul_llama/              # Main source code (model architecture, trainer, etc.)
+    ├── train_bpe_tokenizer.py          # Clone AOSP, make corpus, merge AOSP corpus and code llama vocab to train bpe' tokenizer
+    ├── cl_model.py                     # Define Code LLaMA model arch
+    ├── vl_model.py                     # Define Vul LLaMA model
+    ├── main.py                         # main execute file
+
 ├── saved_model/            # Fine-tuned model checkpoints (ignored)
+├── statistic
+    ├── generate_rank.py                # Rank result of Vul LLaMA / LineVul model
+    ├── generate_rank.py                # Rank result of Vul LLaMA / LineVul model
+
 ├── environment.yml         # Conda environment setup
 ├── .gitignore              # Files/folders excluded from Git tracking
 ├── README.md               # This file
@@ -50,7 +59,7 @@ conda activate venv
 cd VulLLaMA/data
 
 # Download Dataset
-wget FIXME
+wget https://github.com/TUTUTU0817/CodeLLaMA_GCN_model/blob/main/Dataset/raw_dataset.tar.gz
 
 # Unzip Dataset
 unzip merged_output_function.zip raw_dataset.json
@@ -71,6 +80,12 @@ Place the following files under `data/`:
 ---
 
 ## Usage
+
+### Train BPE on AOSP
+```bash
+cd  VulLLaMA/vul_llama
+python ./train_bpe_tokenizer.py
+```
 
 ### Train Code LLaMA
 ```bash
