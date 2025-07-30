@@ -287,7 +287,7 @@ def test(args, model, tokenizer, test_dataset, best_threshold=0.5):
 
     # Processing line level
     if args.do_sorting_by_line_scores:
-        # (RQ3) Effort@TopK%Recall & Recall@TopK%LOC for the whole test set
+        # (RQ4) Effort@TopK%Recall & Recall@TopK%LOC for the whole test set
         # flatten the logits
         per_func_dataloader = DataLoader(test_dataset, batch_size=1, shuffle=False, collate_fn=custom_collate_fn)   # 此處 batch size 一定要設 1，才會是以 function 為單位處理行級別注意力分數
         progress_bar = tqdm(per_func_dataloader, total=len(per_func_dataloader))
@@ -1076,7 +1076,7 @@ def main():
                         help="How to get line attention score, should be one of 'sum', 'mean', 'token_sqr_mean'")
     parser.add_argument("--do_local_explanation", default=True, action='store_true',
                         help="Whether to do local explanation. ") 
-    parser.add_argument("do_sorting_by_line_scores", default=True, action='store_true',
+    parser.add_argument("--do_sorting_by_line_scores", default=True, action='store_true',
                         help="Whether to sort the line scores by attention or logits scores.")
     parser.add_argument("--effort_at_n_percent_recall", type=float, default=0.2,
                         help="Effort at n% recall, e.g., 0.2 means 20% recall")
@@ -1182,4 +1182,4 @@ def main():
         test(args, model, tokenizer, test_dataset, best_threshold=0.5)
 
 if __name__ == "__main__":
-    main()    
+    main()

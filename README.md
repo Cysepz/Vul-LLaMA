@@ -1,15 +1,4 @@
 # Vul LLaMA: Enhancing Line-Level Vulnerability Localization Performance in Android Code by Fine-Tuning the Self-Attention Mechanism of Code LLaMA
-
-<p align="center">
-  <img src="C:\Users\cymlab\OneDrive - 國立高雄應用科技大學\112屆\朱珮瑜\7月口試\VulLLaMA.png" width="200" height="200">
-</p>
-
-<p align="center">
-  <strong>VulLLaMA</strong><br>
-</p>
-
----
-
 ## Overview
 
 **VulLLaMA** is a replication-ready research prototype that fine-tunes the self-attention mechanism in Code LLaMA for line-level vulnerability prediction in Android source code. 
@@ -57,21 +46,27 @@ conda activate venv
 ```
 
 ### Step 3: Download and Unzip Dataset
-
 ```bash
-FIXME
+cd VulLLaMA/data
+
+# Download Dataset
+wget FIXME
+
+# Unzip Dataset
+unzip merged_output_function.zip raw_dataset.json
+
+# Process, balance and split dataset
+python ./pre_process.py --mode process
+python ./pre_process.py --mode balance
+python ./pre_process.py --mode split
 ```
 All of the dataset has the same number of columns (i.e., 39 cols), we focus on the following 3 columns to conduct our experiments:
-1. 
-
 
 Place the following files under `data/`:
 
 * `processed_dataset.json`
 * `raw_dataset.json`
 * `balanced_dataset.json`
-
-> These files are large and are not included in the repo due to GitHub size limits.
 
 ---
 

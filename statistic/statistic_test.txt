@@ -1,0 +1,50 @@
+讀取資料集: /home/peggy/VulLlama/data_linevul/test.csv，總筆數: 2000
+=== function_label 統計結果 ===
+總筆數: 2000
+function_label = 1 的筆數: 999
+function_label = 0 的筆數: 1001
+
+=== flaw_line_index 欄位長度統計（target == 1）===
+1個值: 729 筆, 占總數 72.97%
+2個值: 221 筆, 占總數 22.12%
+3個值: 20 筆, 占總數 2.00%
+4個值: 9 筆, 占總數 0.90%
+5個值: 8 筆, 占總數 0.80%
+6~10個值: 11 筆, 占總數 1.10%
+大於10個值: 1 筆, 占總數 0.10%
+
+讀取合併結果: /home/peggy/VulLlama/statistic/merge_final.csv，總漏洞行: 1396
+=== Merge result 預測分析===
+1. VL_func_pred ≠ function_label: 207 筆
+2. LV_func_pred ≠ function_label: 295 筆
+3. LineVul 判斷為 vuln func 但缺乏行級別分數的筆數: 49
+4. VL_rank < LV_rank: 305 筆
+   差距 1: 163 筆
+   差距 2: 51 筆
+   差距 3: 44 筆
+   差距 4: 13 筆
+   差距 5: 16 筆
+   差距 6: 3 筆
+   差距 7: 8 筆
+   差距 8: 3 筆
+   差距 9: 1 筆
+   差距 11+: 3 筆
+5. VL_rank > LV_rank: 175 筆
+   差距 1: 109 筆
+   差距 2: 44 筆
+   差距 3: 16 筆
+   差距 4: 4 筆
+   差距 5: 1 筆
+   差距 6: 1 筆
+6. VL_rank == LV_rank: 620 筆
+   Rank 位於 1: 284 筆
+   Rank 位於 2: 152 筆
+   Rank 位於 3: 85 筆
+   Rank 位於 4: 69 筆
+   Rank 位於 5: 8 筆
+   Rank 位於 6: 5 筆
+   Rank 位於 7: 4 筆
+   Rank 位於 8: 5 筆
+   Rank 位於 10: 2 筆
+   Rank 位於 11+: 6 筆
+
