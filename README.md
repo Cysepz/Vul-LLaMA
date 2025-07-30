@@ -36,7 +36,7 @@ This repository contains:
 
 ---
 
-## Setup Instructions
+## Setup
 
 ### Step 1: Clone the Repository
 
@@ -129,12 +129,10 @@ python ./vul_llama/main.py \
          --mode test --tokenizer non_pretrained --model_name vulllama_b4 \
          --saved_model_dir ./saved_model \
 	     --get_line_attn_mode mean \
-         --test_output_path ./vul_llama/results/vulllama_b4_pred_result_mean.csv \
+         --test_output_path ./vul_llama/results/0705_vulllama_b4_pred_result_mean.csv \
          --batch_size 16 --gradient_accumulation_steps 1 --learning_rate 1e-4 --weight_decay 0.0 --adam_epsilon 1e-3 --max_grad_norm 1.0 --epochs 18 \
          --device cuda
 ```
-
-> You may customize training parameters in `run_vulllama.py` as needed.
 
 ---
 
